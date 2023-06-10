@@ -67,6 +67,7 @@ extension ViewController: UnityAdsInitializationDelegate, UnityAdsLoadDelegate, 
         logUnityAnalyticsEvent(eventName: "Ad started", parameters: [
             "address": UnityAnalytics.sharedAnalytics.userWalletAddress,
             "duration": 30,
+            "engagementFactor": 2,
             "isNativeAd": true
         ])
     }
