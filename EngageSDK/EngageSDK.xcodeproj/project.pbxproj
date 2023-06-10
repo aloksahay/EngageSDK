@@ -14,6 +14,8 @@
 		5C0F03362A34E2B100E8D799 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C0F03342A34E2B100E8D799 /* Main.storyboard */; };
 		5C0F03382A34E2B200E8D799 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C0F03372A34E2B200E8D799 /* Assets.xcassets */; };
 		5C0F033B2A34E2B200E8D799 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C0F03392A34E2B200E8D799 /* LaunchScreen.storyboard */; };
+		5C57B8BA2A3528B600877A5E /* Configuration.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5C57B8B92A3528B600877A5E /* Configuration.plist */; };
+		5CC9B4CF2A35269D00619E53 /* Web3Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC9B4CE2A35269D00619E53 /* Web3Manager.swift */; };
 		5CF43AEA2A34F81A00661044 /* UnityAds.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CF43AE92A34F81A00661044 /* UnityAds.xcframework */; };
 		A95A324D9781AB9A2174EFAD /* Pods_EngageSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEBC51BA87C88901C9A3C31C /* Pods_EngageSDK.framework */; };
 /* End PBXBuildFile section */
@@ -29,6 +31,8 @@
 		5C0F033A2A34E2B200E8D799 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5C0F033C2A34E2B200E8D799 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5C0F03422A34F65E00E8D799 /* UnityAds-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UnityAds-Bridging-Header.h"; sourceTree = "<group>"; };
+		5C57B8B92A3528B600877A5E /* Configuration.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Configuration.plist; sourceTree = "<group>"; };
+		5CC9B4CE2A35269D00619E53 /* Web3Manager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Web3Manager.swift; sourceTree = "<group>"; };
 		5CF43AE92A34F81A00661044 /* UnityAds.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = UnityAds.xcframework; path = Pods/UnityAds/UnityAds.xcframework; sourceTree = "<group>"; };
 		B652B0ED17324BCAAFA9947B /* Pods-EngageSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EngageSDK.release.xcconfig"; path = "Target Support Files/Pods-EngageSDK/Pods-EngageSDK.release.xcconfig"; sourceTree = "<group>"; };
 		BEBC51BA87C88901C9A3C31C /* Pods_EngageSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EngageSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -86,6 +90,7 @@
 		5C0F032D2A34E2B100E8D799 /* EngageSDK */ = {
 			isa = PBXGroup;
 			children = (
+				5CC9B4CD2A35267B00619E53 /* Web3 */,
 				5C0B5AF02A34FCF10052E5D6 /* Analytics */,
 				5C0F032E2A34E2B100E8D799 /* AppDelegate.swift */,
 				5C0F03302A34E2B100E8D799 /* SceneDelegate.swift */,
@@ -94,9 +99,18 @@
 				5C0F03372A34E2B200E8D799 /* Assets.xcassets */,
 				5C0F03392A34E2B200E8D799 /* LaunchScreen.storyboard */,
 				5C0F033C2A34E2B200E8D799 /* Info.plist */,
+				5C57B8B92A3528B600877A5E /* Configuration.plist */,
 				5C0F03422A34F65E00E8D799 /* UnityAds-Bridging-Header.h */,
 			);
 			path = EngageSDK;
+			sourceTree = "<group>";
+		};
+		5CC9B4CD2A35267B00619E53 /* Web3 */ = {
+			isa = PBXGroup;
+			children = (
+				5CC9B4CE2A35269D00619E53 /* Web3Manager.swift */,
+			);
+			path = Web3;
 			sourceTree = "<group>";
 		};
 		7F24B07D17A985C7C268F823 /* Pods */ = {
@@ -119,6 +133,7 @@
 				5C0F03272A34E2B100E8D799 /* Sources */,
 				5C0F03282A34E2B100E8D799 /* Frameworks */,
 				5C0F03292A34E2B100E8D799 /* Resources */,
+				B49AAAF36B21BE63C9D2EDDA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -168,6 +183,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5C0F033B2A34E2B200E8D799 /* LaunchScreen.storyboard in Resources */,
+				5C57B8BA2A3528B600877A5E /* Configuration.plist in Resources */,
 				5C0F03382A34E2B200E8D799 /* Assets.xcassets in Resources */,
 				5C0F03362A34E2B100E8D799 /* Main.storyboard in Resources */,
 			);
@@ -198,6 +214,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		B49AAAF36B21BE63C9D2EDDA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EngageSDK/Pods-EngageSDK-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EngageSDK/Pods-EngageSDK-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EngageSDK/Pods-EngageSDK-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -207,6 +240,7 @@
 			files = (
 				5C0B5AF22A34FF080052E5D6 /* UnityAnalytics.swift in Sources */,
 				5C0F03332A34E2B100E8D799 /* ViewController.swift in Sources */,
+				5CC9B4CF2A35269D00619E53 /* Web3Manager.swift in Sources */,
 				5C0F032F2A34E2B100E8D799 /* AppDelegate.swift in Sources */,
 				5C0F03312A34E2B100E8D799 /* SceneDelegate.swift in Sources */,
 			);
