@@ -1,0 +1,6 @@
+framework module Pods_EngageSDK {
+  umbrella header "Pods-EngageSDK-umbrella.h"
+
+  export *
+  module * { export * }
+}
