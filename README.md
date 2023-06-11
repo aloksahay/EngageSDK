@@ -17,3 +17,5 @@ taiko: 0x783333dc5d367bB728427a8422530f5F6B484B2D
 deployed paymaster contract for polygon mumbai account-abstraction usecase: 0x41c047d4a6f0c7921de4E7fa4E5729BA9E7ccb3d
 
 deployed erc20 test contracto on mumbai: 0xB9BFd5be9BD3340E0D5D4E9238Dd6Fd9B061b03b
+
+Transaction hash exmaple where paymaster paid for gas and erc20-token arrived for user for airdrop: 0x6109a0423d94e2a7f975d2e253398f403c428b54c434ba281664a3d26e9a12ad
