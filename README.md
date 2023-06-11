@@ -3,6 +3,7 @@ EngageFi is a unity based mobile SDK to bring an alternate revenue model to exis
 
 # Deployed contracts
 gnosis-chiado: 0x85061d338fDaBDB62503bd4b8A8DCdbd72E951d7
+
 mantle testnet: 0x85061d338fDaBDB62503bd4b8A8DCdbd72E951d7
 mumbai: 0x6cf2cd877020aA4c228843Db3dF26E4F3EE510e5
 scroll: 0x09cb994F331d251d725B748E75CF4748F2dA6E1f
