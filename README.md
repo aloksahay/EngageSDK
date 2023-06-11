@@ -12,6 +12,11 @@ scroll: 0x09cb994F331d251d725B748E75CF4748F2dA6E1f
 
 taiko: 0x783333dc5d367bB728427a8422530f5F6B484B2D
 
+# What the contract does?
+
+Advertisers can view the engagement of a game developer and make an offer for their own content. Developers view the ad content + revenue offer and can accept the bid online, this new ad is queued into the Unity ads SDK.
+
+
 # Account-Abstraction
 
 deployed paymaster contract for polygon mumbai account-abstraction usecase: 0x41c047d4a6f0c7921de4E7fa4E5729BA9E7ccb3d
