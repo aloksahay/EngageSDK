@@ -92,31 +92,47 @@ export const simpleUserOpBuilder = async (
   if (!entrypoint) throw new Error("Entrypoint not found");
 
   const { maxFeePerGas, maxPriorityFeePerGas } = await eip1559GasPrice(provider);
-  const callGasLimit = await provider.estimateGas({
-    from: sender,
-    to: target,
-    value: value || BigInt(0),
-    data: data || "0x",
-  });
+  // const callGasLimit = await provider.estimateGas({
+  //   from: sender,
+  //   to: target,
+  //   value: value || BigInt(0),
+  //   data: data || "0x",
+  // });
 
+  const engagementToken = "0xB9BFd5be9BD3340E0D5D4E9238Dd6Fd9B061b03b";
   const walletIface = new ethers.Interface(["function execute(address,uint256,bytes)"]);
+  const erc20Token = new ethers.Interface(["function transfer(address to, uint amount) returns (bool)"]);
+
+  // this calldata is to send native token, works fine
+  // const callData = walletIface.encodeFunctionData("execute", [
+  //   target,
+  //   value || BigInt(0),
+  //   data || "0x",
+  // ]);
+
+  //this calldata sends erc20
+  const ZERO_ADDRESS = '0x0000000000000000000000000000000000000000' 
   const callData = walletIface.encodeFunctionData("execute", [
-    target,
-    value || BigInt(0),
-    data || "0x",
+    engagementToken,
+    ZERO_ADDRESS,
+    // data || "0x",
+    erc20Token.encodeFunctionData("transfer", ["0x40aD3Ad4cCDE3F803F3A667374cf2Ac1aa3b514a", 10000000]),
   ]);
+
+  // Here we may be able to send erc20, stackup example is on: https://docs.stackup.sh/docs/erc-4337-useroperation-calldata-guide
+  // this might work, there is an example on sending usdc, catch on it back later.
 
   const userOp = {
     sender: sender,
     nonce: await entrypoint.getNonce(sender, 0),
     initCode: "0x",
     callData,
-    callGasLimit,
+    callGasLimit : 50000,
     verificationGasLimit: 100000,
-    preVerificationGas: 21000,
+    preVerificationGas: 50000,
     maxFeePerGas,
     maxPriorityFeePerGas,
-    paymasterAndData: "0x",
+    paymasterAndData: "0x41c047d4a6f0c7921de4E7fa4E5729BA9E7ccb3d", // my deployed paymaster: 0x41c047d4a6f0c7921de4E7fa4E5729BA9E7ccb3d
   } as UserOperation;
 
   const userOpHash = getUserOperation(userOp, entrypointAddress, Number(chainId));
