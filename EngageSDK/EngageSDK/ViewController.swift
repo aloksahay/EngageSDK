@@ -31,14 +31,22 @@ class ViewController: UIViewController {
         UnityAds.load("Interstitial_iOS", loadDelegate: self)
     }
     
-    @objc func buttonTapped() {
+    @objc func buttonTapped() async {
         print("Show ads!")
         UnityAds.show(self, placementId: "Interstitial_iOS", showDelegate: self)
+        
+        await logUnityAnalyticsEvent(eventName: "Ad started", parameters: [
+            "address": UnityAnalytics.sharedAnalytics.userWalletAddress,
+            "duration": 30,
+            "engagementFactor": 2,
+            "isNativeAd": true
+        ])
     }
     
-    func logUnityAnalyticsEvent(eventName: String, parameters: [String: Any]) {
+    func logUnityAnalyticsEvent(eventName: String, parameters: [String: Any]) async {
         print("Unity Analytics Event: \(eventName)")
         print("Parameters: \(parameters)")
+        await Web3Manager.sharedManager.postAnalytics(eventName: eventName, parameters: parameters)
     }
 }
 
@@ -62,12 +70,6 @@ extension ViewController: UnityAdsInitializationDelegate, UnityAdsLoadDelegate, 
     
     func unityAdsShowStart(_ placementId: String) {
       print("log unity analytics")
-        logUnityAnalyticsEvent(eventName: "Ad started", parameters: [
-            "address": UnityAnalytics.sharedAnalytics.userWalletAddress,
-            "duration": 30,
-            "engagementFactor": 2,
-            "isNativeAd": true
-        ])
     }
     
     func unityAdsShowClick(_ placementId: String) {

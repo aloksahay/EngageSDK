@@ -16,6 +16,7 @@
 			dependencies = (
 			);
 			name = UnityAds;
+			productName = UnityAds;
 		};
 /* End PBXAggregateTarget section */
 
@@ -519,7 +520,7 @@
 		2851ADF1CE64A800A8AD61A12026F348 /* Prime Test.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Prime Test.swift"; path = "Sources/Prime Test.swift"; sourceTree = "<group>"; };
 		29373A076447BEC1150FD868CF3F857C /* NativeEngine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NativeEngine.swift; path = Sources/Engine/NativeEngine.swift; sourceTree = "<group>"; };
 		2A9B74F96A86992F733B1E645F9C149C /* HMAC+Foundation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "HMAC+Foundation.swift"; path = "Sources/CryptoSwift/Foundation/HMAC+Foundation.swift"; sourceTree = "<group>"; };
-		2C1A8C8BA9EA70D189FD267A90B89D12 /* secp256k1.c */ = {isa = PBXFileReference; includeInIndex = 1; name = secp256k1.c; path = secp256k1/secp256k1.c; sourceTree = "<group>"; };
+		2C1A8C8BA9EA70D189FD267A90B89D12 /* secp256k1.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = secp256k1.c; path = secp256k1/secp256k1.c; sourceTree = "<group>"; };
 		2C7158371E2F298F51AE11059BB0AFEB /* Utils+Foundation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Utils+Foundation.swift"; path = "Sources/CryptoSwift/Foundation/Utils+Foundation.swift"; sourceTree = "<group>"; };
 		2CFAD1E4DBD241242D9F0B170B1695D2 /* scalar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = scalar.h; path = secp256k1/scalar.h; sourceTree = "<group>"; };
 		2D19AD1BCBD3A21DF441E3AFC53323B2 /* Web3+Signing.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Web3+Signing.swift"; path = "Sources/web3swift/Web3/Web3+Signing.swift"; sourceTree = "<group>"; };
@@ -531,14 +532,14 @@
 		31871A8D95A1A618F8ECDE7FAC41C46F /* KeystoreParams.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeystoreParams.swift; path = Sources/Web3Core/KeystoreManager/KeystoreParams.swift; sourceTree = "<group>"; };
 		320409590FA363E4D1D869B92A556F7F /* KeystoreManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeystoreManager.swift; path = Sources/Web3Core/KeystoreManager/KeystoreManager.swift; sourceTree = "<group>"; };
 		32C0DE6086D821FB649F6C4188DCE861 /* eckey_impl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = eckey_impl.h; path = secp256k1/eckey_impl.h; sourceTree = "<group>"; };
-		332A47430CFF99501D563788C7AAF1D2 /* secp256k1.c */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = secp256k1.c; path = secp256k1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		332A47430CFF99501D563788C7AAF1D2 /* secp256k1.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = secp256k1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		335D36900BA9534C9D464B64124D4451 /* CMAC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CMAC.swift; path = Sources/CryptoSwift/CMAC.swift; sourceTree = "<group>"; };
 		336BC6AC1BE23433E0C841AA8C8D994B /* UInt16+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UInt16+Extension.swift"; path = "Sources/CryptoSwift/UInt16+Extension.swift"; sourceTree = "<group>"; };
 		33A03E7648956981762DAA7DBCC556B0 /* ecmult_gen_impl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ecmult_gen_impl.h; path = secp256k1/ecmult_gen_impl.h; sourceTree = "<group>"; };
 		3435E9442545B780F0986A1433A9D1BF /* Blowfish.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Blowfish.swift; path = Sources/CryptoSwift/Blowfish.swift; sourceTree = "<group>"; };
 		35149E659DEBE07585A4837DCA0FDF8A /* BigInt-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BigInt-umbrella.h"; sourceTree = "<group>"; };
 		36817B0ED4351DBEDF1C325DC9A38748 /* Compression.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Compression.swift; path = Sources/Compression/Compression.swift; sourceTree = "<group>"; };
-		3696C3FF952722EDC40248C9720678EF /* browser.js */ = {isa = PBXFileReference; includeInIndex = 1; name = browser.js; path = Sources/web3swift/Browser/browser.js; sourceTree = "<group>"; };
+		3696C3FF952722EDC40248C9720678EF /* browser.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = browser.js; path = Sources/web3swift/Browser/browser.js; sourceTree = "<group>"; };
 		36A14EBA1A82A195309A1DC2A478BBDB /* Web3+ERC1644.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Web3+ERC1644.swift"; path = "Sources/web3swift/Tokens/ERC1644/Web3+ERC1644.swift"; sourceTree = "<group>"; };
 		36B74D2BA31FA94459CB7DD858D30E7C /* secp256k1.c-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "secp256k1.c-dummy.m"; sourceTree = "<group>"; };
 		3759AF1BA05E4F54CBA2D7E8A3B63BAC /* Array+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Array+Extension.swift"; path = "Sources/Web3Core/Utility/Array+Extension.swift"; sourceTree = "<group>"; };
@@ -655,7 +656,7 @@
 		882B8EAC50A849810882AD5A50E32DDA /* PKCS7Padding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PKCS7Padding.swift; path = Sources/CryptoSwift/PKCS/PKCS7Padding.swift; sourceTree = "<group>"; };
 		884547DF1BA645E165B13CAC938177B5 /* PCBC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PCBC.swift; path = Sources/CryptoSwift/BlockMode/PCBC.swift; sourceTree = "<group>"; };
 		884C615BBD80D052184522CEF4B30B52 /* Integer Conversion.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Integer Conversion.swift"; path = "Sources/Integer Conversion.swift"; sourceTree = "<group>"; };
-		891B2270823847ED23F2ECFC28F935EC /* Starscream */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Starscream; path = Starscream.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		891B2270823847ED23F2ECFC28F935EC /* Starscream.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Starscream.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A03028D32A2F8D7A053F2DFFB6A36B5 /* hash.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = hash.h; path = secp256k1/hash.h; sourceTree = "<group>"; };
 		8A2449DF78D58AD33A7C7504BB3F38A0 /* web3swift */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = web3swift; path = web3swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A5F899F501E2864CC10BA8B8787699A /* BigInt-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "BigInt-Info.plist"; sourceTree = "<group>"; };
@@ -667,7 +668,7 @@
 		8FD748C9D202F635AD99E09D01E5386E /* ecmult_impl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ecmult_impl.h; path = secp256k1/ecmult_impl.h; sourceTree = "<group>"; };
 		901532BF7D4FFB1595632F8F8CFF69A3 /* APIRequest+ComputedProperties.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "APIRequest+ComputedProperties.swift"; path = "Sources/Web3Core/EthereumNetwork/Request/APIRequest+ComputedProperties.swift"; sourceTree = "<group>"; };
 		9112367C50387494F9DA1DE8AABEC805 /* NameHash.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NameHash.swift; path = Sources/web3swift/Utils/ENS/NameHash.swift; sourceTree = "<group>"; };
-		91BB24BA472AF523E913108C9AA301F2 /* BigInt */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = BigInt; path = BigInt.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		91BB24BA472AF523E913108C9AA301F2 /* BigInt.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BigInt.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		92F883AC9C0E6025BFC45B81E10D3D7E /* StreamDecryptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StreamDecryptor.swift; path = Sources/CryptoSwift/StreamDecryptor.swift; sourceTree = "<group>"; };
 		9441EA511C91B0854F26DA43D5924AEC /* Authenticator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Authenticator.swift; path = Sources/CryptoSwift/Authenticator.swift; sourceTree = "<group>"; };
 		9469F42B5B3FA2AFD966BE6A988A2E77 /* field_5x52_int128_impl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = field_5x52_int128_impl.h; path = secp256k1/field_5x52_int128_impl.h; sourceTree = "<group>"; };
@@ -686,7 +687,7 @@
 		9B7A7CF8E56245097127B7C0608031DC /* Web3+ERC1594.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Web3+ERC1594.swift"; path = "Sources/web3swift/Tokens/ERC1594/Web3+ERC1594.swift"; sourceTree = "<group>"; };
 		9CE08DC8B0093567721036151616DBC5 /* Data+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Data+Extension.swift"; path = "Sources/Web3Core/Utility/Data+Extension.swift"; sourceTree = "<group>"; };
 		9D7BEBB4F6F30914FC145D35D7CB1291 /* CryptoSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CryptoSwift.release.xcconfig; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9F4A8E520B171E8AEC7849D4552C3E4B /* scratch.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = scratch.h; path = secp256k1/scratch.h; sourceTree = "<group>"; };
 		9F4C1612BEFF37717AF37C45479B291F /* BIP39.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BIP39.swift; path = Sources/Web3Core/KeystoreManager/BIP39.swift; sourceTree = "<group>"; };
 		A043EE2DF07F1FD4184C134E7D386732 /* EIP712.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EIP712.swift; path = Sources/web3swift/Utils/EIP/EIP712.swift; sourceTree = "<group>"; };
@@ -797,9 +798,9 @@
 		DF56CAFCB2A247EA8FB74AF2932177EF /* FoundationTransport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FoundationTransport.swift; path = Sources/Transport/FoundationTransport.swift; sourceTree = "<group>"; };
 		DFE6C425245E91C63617FA8357715EF2 /* field_5x52.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = field_5x52.h; path = secp256k1/field_5x52.h; sourceTree = "<group>"; };
 		E007D47CB2F3FCF2935071C184B106CB /* RIPEMD160+StackOveflow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "RIPEMD160+StackOveflow.swift"; path = "Sources/Web3Core/Utility/RIPEMD160+StackOveflow.swift"; sourceTree = "<group>"; };
-		E03C290BE4780E099ED9B6669E817B3B /* browser.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = browser.min.js; path = Sources/web3swift/Browser/browser.min.js; sourceTree = "<group>"; };
+		E03C290BE4780E099ED9B6669E817B3B /* browser.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = browser.min.js; path = Sources/web3swift/Browser/browser.min.js; sourceTree = "<group>"; };
 		E191092A123240C38C10DE3CDC64E813 /* Web3+Instance.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Web3+Instance.swift"; path = "Sources/web3swift/Web3/Web3+Instance.swift"; sourceTree = "<group>"; };
-		E25DF4A77733888FB819D8DE8473D46D /* wk.bridge.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = wk.bridge.min.js; path = Sources/web3swift/Browser/wk.bridge.min.js; sourceTree = "<group>"; };
+		E25DF4A77733888FB819D8DE8473D46D /* wk.bridge.min.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = wk.bridge.min.js; path = Sources/web3swift/Browser/wk.bridge.min.js; sourceTree = "<group>"; };
 		E3A3024877E16C8F620C216B2792449C /* String Conversion.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String Conversion.swift"; path = "Sources/CryptoSwift/CS_BigInt/String Conversion.swift"; sourceTree = "<group>"; };
 		E3B1E1AD49A10D023E313073F8F38DA8 /* Hashable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Hashable.swift; path = Sources/CryptoSwift/CS_BigInt/Hashable.swift; sourceTree = "<group>"; };
 		E478EBE001BC6CB7B6DCE38FF39229B7 /* Subtraction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Subtraction.swift; path = Sources/CryptoSwift/CS_BigInt/Subtraction.swift; sourceTree = "<group>"; };
@@ -818,7 +819,7 @@
 		EB8C1725DD92F72DD90395B8C717CEDD /* PBKDF2.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PBKDF2.swift; path = Sources/CryptoSwift/PKCS/PBKDF2.swift; sourceTree = "<group>"; };
 		EC324EFB2DEFA47EFA549F8C0249A979 /* ABIElements.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ABIElements.swift; path = Sources/Web3Core/EthereumABI/ABIElements.swift; sourceTree = "<group>"; };
 		ECEE438616185D6B3658B00A880917DB /* CompactMap.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CompactMap.swift; path = Sources/CryptoSwift/CompactMap.swift; sourceTree = "<group>"; };
-		ED059EA41B8E747D5E8120F6C24C1C93 /* UnityAds.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = UnityAds.xcframework; sourceTree = "<group>"; };
+		ED059EA41B8E747D5E8120F6C24C1C93 /* UnityAds.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.xcframework; path = UnityAds.xcframework; sourceTree = "<group>"; };
 		ED257B114E74BF81A4CDC143795843E6 /* Web3+ERC20.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Web3+ERC20.swift"; path = "Sources/web3swift/Tokens/ERC20/Web3+ERC20.swift"; sourceTree = "<group>"; };
 		EDC2D4AF935AF659A415762C01BC37F8 /* Starscream-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Starscream-Info.plist"; sourceTree = "<group>"; };
 		EEF96E6E7B39DDE220E1EA0A532B3E32 /* ecdsa.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ecdsa.h; path = secp256k1/ecdsa.h; sourceTree = "<group>"; };
@@ -969,11 +970,11 @@
 		3D5FEDC85FE875039AE8143B30702955 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				91BB24BA472AF523E913108C9AA301F2 /* BigInt */,
+				91BB24BA472AF523E913108C9AA301F2 /* BigInt.framework */,
 				F81274EDB681F11E7CB05F7DCA2BB33C /* CryptoSwift */,
 				618EA107D32D84BDAA6749AFFDF84718 /* Pods-EngageSDK */,
-				332A47430CFF99501D563788C7AAF1D2 /* secp256k1.c */,
-				891B2270823847ED23F2ECFC28F935EC /* Starscream */,
+				332A47430CFF99501D563788C7AAF1D2 /* secp256k1.framework */,
+				891B2270823847ED23F2ECFC28F935EC /* Starscream.framework */,
 				45D36C22C663F68DE8BD9F06AE7B7880 /* Web3Core */,
 				8A2449DF78D58AD33A7C7504BB3F38A0 /* web3swift */,
 				12DC6A0FDF284A2C935F5EA9F6111B0B /* web3swift-Browser */,
@@ -1042,7 +1043,6 @@
 				9086F321EF45FD97C83A13261B95BC75 /* Resources */,
 				E4FA499699E9BE4C10DD38255D3A7A03 /* Support Files */,
 			);
-			name = web3swift;
 			path = web3swift;
 			sourceTree = "<group>";
 		};
@@ -1127,7 +1127,6 @@
 				E95B8C6C429C876BE3A797E9AA851AE0 /* Web3ProviderProtocol.swift */,
 				3B835E6440316DDFEA8A8832A19B0570 /* Support Files */,
 			);
-			name = Web3Core;
 			path = Web3Core;
 			sourceTree = "<group>";
 		};
@@ -1215,7 +1214,6 @@
 				D8F0290CBB7AADE9C29AEA0C78F613C9 /* util.h */,
 				D88A49017302BBCCF3C15E2AED232AA6 /* Support Files */,
 			);
-			name = secp256k1.c;
 			path = secp256k1.c;
 			sourceTree = "<group>";
 		};
@@ -1225,7 +1223,6 @@
 				687EF5C6730DA8DF325BCB900A447854 /* Frameworks */,
 				62335B650A86949457B48D903CDE9C17 /* Support Files */,
 			);
-			name = UnityAds;
 			path = UnityAds;
 			sourceTree = "<group>";
 		};
@@ -1384,7 +1381,6 @@
 				192D2F49E8AD3B27BC05FB487BA0E859 /* ZeroPadding.swift */,
 				A1C8F4A6D4816C17232B7BD379C0A780 /* Support Files */,
 			);
-			name = CryptoSwift;
 			path = CryptoSwift;
 			sourceTree = "<group>";
 		};
@@ -1415,7 +1411,6 @@
 				53D726C7F9719E2A3F6BCC2DD58730E2 /* Words and Bits.swift */,
 				567FD5EF3B3BB12D1B43A6DF5F57BEDD /* Support Files */,
 			);
-			name = BigInt;
 			path = BigInt;
 			sourceTree = "<group>";
 		};
@@ -1472,7 +1467,6 @@
 				58CBAD916A2E2F9CE9869CF68941B419 /* WSEngine.swift */,
 				AA596A9D6839A87695FCC9F13843DD5B /* Support Files */,
 			);
-			name = Starscream;
 			path = Starscream;
 			sourceTree = "<group>";
 		};
@@ -1628,7 +1622,7 @@
 			);
 			name = BigInt;
 			productName = BigInt;
-			productReference = 91BB24BA472AF523E913108C9AA301F2 /* BigInt */;
+			productReference = 91BB24BA472AF523E913108C9AA301F2 /* BigInt.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		161C26511FC920CB146236AB7295D5E0 /* secp256k1.c */ = {
@@ -1646,7 +1640,7 @@
 			);
 			name = secp256k1.c;
 			productName = secp256k1;
-			productReference = 332A47430CFF99501D563788C7AAF1D2 /* secp256k1.c */;
+			productReference = 332A47430CFF99501D563788C7AAF1D2 /* secp256k1.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		621047930970B1C4E88EFA33437CC2A2 /* Web3Core */ = {
@@ -1741,7 +1735,7 @@
 			);
 			name = Starscream;
 			productName = Starscream;
-			productReference = 891B2270823847ED23F2ECFC28F935EC /* Starscream */;
+			productReference = 891B2270823847ED23F2ECFC28F935EC /* Starscream.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		B267DD98B604BD68798E2B029DF52DAD /* Pods-EngageSDK */ = {
@@ -2362,7 +2356,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/BigInt/BigInt-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/BigInt/BigInt-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -2501,7 +2495,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/secp256k1.c/secp256k1.c-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/secp256k1.c/secp256k1.c-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -2591,7 +2585,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/BigInt/BigInt-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/BigInt/BigInt-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -2663,7 +2657,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -2691,7 +2685,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/secp256k1.c/secp256k1.c-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/secp256k1.c/secp256k1.c-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -2725,7 +2719,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/Starscream/Starscream-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/Starscream/Starscream-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -2865,7 +2859,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/Starscream/Starscream-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/Starscream/Starscream-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -2986,7 +2980,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
