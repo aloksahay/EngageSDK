@@ -12,6 +12,8 @@ scroll: 0x09cb994F331d251d725B748E75CF4748F2dA6E1f
 
 taiko: 0x783333dc5d367bB728427a8422530f5F6B484B2D
 
+base: 0x85061d338fDaBDB62503bd4b8A8DCdbd72E951d7
+
 # What the contract does?
 
 Advertisers can view the engagement of a game developer and make an offer for their own content. Developers view the ad content + revenue offer and can accept the bid online, this new ad is queued into the Unity ads SDK.
