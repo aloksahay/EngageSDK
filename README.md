@@ -1,6 +1,8 @@
 # EngageSDK
 EngageFi is a unity based mobile SDK to bring an alternate revenue model to existing ad-revenue based games based on real time verifiable engagement.
 
+View here: https://docs.google.com/presentation/d/1l3sLJFawo2H8sVb_x38yxkGLcoLdSBVkE_8yPxdNYS4/edit?usp=sharing
+
 # Deployed contracts
 gnosis-chiado: 0x85061d338fDaBDB62503bd4b8A8DCdbd72E951d7
 
